@@ -1,0 +1,5 @@
+package com.bikeservicemanagement.dto;
+
+public class AddWalletMoneyRequestDto {
+
+}

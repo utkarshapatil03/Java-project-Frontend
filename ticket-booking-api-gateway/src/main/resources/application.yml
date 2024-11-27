@@ -1,0 +1,43 @@
+server:
+  port: 9000
+  
+#datasource configuration  
+spring: 
+  application:
+    name: ticket-booking-api-gateway
+    
+  cloud:
+    gateway:
+      routes:
+      - id: ticket-booking-user-service
+        uri: lb://ticket-booking-user-service
+        predicates:
+        - Path=/api/user/**
+        
+      - id: ticket-booking-train-service
+        uri: lb://ticket-booking-train-service
+        predicates:
+        - Path=/api/train/**
+        
+      - id: ticket-booking-location-service
+        uri: lb://ticket-booking-location-service
+        predicates:
+        - Path=/api/location/**
+        
+      - id: ticket-booking-book-service
+        uri: lb://ticket-booking-book-service
+        predicates:
+        - Path=/api/train/book/** 
+   
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+      
+
+    
