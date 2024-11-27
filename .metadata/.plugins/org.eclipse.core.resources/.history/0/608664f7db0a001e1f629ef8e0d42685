@@ -1,0 +1,59 @@
+package com.ticketbooking.train.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ticketbooking.train.dto.CommonApiResponse;
+import com.ticketbooking.train.dto.TrainDetailResponseDto;
+import com.ticketbooking.train.entity.Train;
+import com.ticketbooking.train.resource.TrainResource;
+
+@RestController
+@RequestMapping("/api/train/")
+@CrossOrigin(origins = "http://localhost:3000")
+public class TrainController {
+
+	@Autowired
+	private TrainResource trainResource;
+
+	@PostMapping("/register")
+	public ResponseEntity<CommonApiResponse> registerTrain(@RequestBody Train train) {
+		return trainResource.addTrain(train);
+	}
+
+	@PutMapping("/update")
+	public ResponseEntity<CommonApiResponse> updateTrain(@RequestBody Train train) {
+		return trainResource.addTrain(train);
+	}
+
+	@DeleteMapping("/delete")
+	public ResponseEntity<CommonApiResponse> deleteTrain(@RequestParam("trainId") int trainId) {
+		return trainResource.deleteTrain(trainId);
+	}
+
+	@GetMapping("/fetch")
+	public ResponseEntity<TrainDetailResponseDto> fetchTrainDetail(@RequestParam("trainId") int trainId) {
+		return trainResource.fetchTrainDetail(trainId);
+	}
+
+	@GetMapping("/fetch/all")
+	public ResponseEntity<TrainDetailResponseDto> fetchTrainDetailsFromAndToLocation(
+			@RequestParam("fromLocationId") int fromLocationId, @RequestParam("toLocationId") int toLocationId) {
+		return trainResource.fetchTrainDetailsFromAndToLocation(fromLocationId, toLocationId);
+	}
+
+	@GetMapping("/search")
+	public ResponseEntity<TrainDetailResponseDto> searchTrain(@RequestParam("trainNo") String trainNumber) {
+		return trainResource.searchTrain(trainNumber);
+	}
+
+}

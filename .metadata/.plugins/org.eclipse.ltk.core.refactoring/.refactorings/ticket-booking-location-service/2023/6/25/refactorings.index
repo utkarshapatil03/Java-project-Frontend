@@ -1,0 +1,11 @@
+1687327957144	Rename package 'com.ticketbooking.location.constants.controller'
+1687328551861	Rename type 'Department'
+1687328583962	Rename type 'DepartmentResponseDto'
+1687328658907	Rename type 'DepartmentDao'
+1687328693905	Rename type 'DepartmentNotFoundException'
+1687328754047	Rename type 'DepartmentService'
+1687328809518	Rename type 'DepartmentServiceImpl'
+1687329055358	Rename compilation unit 'DepartmentResource.java'
+1687329382052	Rename type 'DepartmentController'
+1687366077572	Copy compilation unit
+1687366089726	Copy compilation unit

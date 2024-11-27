@@ -1,0 +1,11 @@
+package com.bikeservicemanagement.dto;
+
+import java.math.BigDecimal;
+
+public class AddWalletMoneyRequestDto {
+	
+	private int userId;
+	
+	private BigDecimal walletAmount;
+
+}

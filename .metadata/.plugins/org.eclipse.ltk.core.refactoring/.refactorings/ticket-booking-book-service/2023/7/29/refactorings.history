@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CommonApiResponse.java&apos; to &apos;bike-service-management/src/main/java/com.bikeservicemanagement.dto&apos;&#x0D;&#x0A;- Original project: &apos;ticket-booking-book-service&apos;&#x0D;&#x0A;- Destination element: &apos;bike-service-management/src/main/java/com.bikeservicemanagement.dto&apos;&#x0D;&#x0A;- Original element: &apos;com.ticketbooking.book.dto.CommonApiResponse.java&apos;" description="Copy compilation unit" destination="=bike-service-management/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bikeservicemanagement.dto" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ticketbooking.book.dto{CommonApiResponse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1689788915755" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BillExporter.java&apos; to &apos;ticket-booking-book-service/src/main/java/com.ticketbooking.book.utility&apos;&#x0D;&#x0A;- Original project: &apos;hospital-management-system&apos;&#x0D;&#x0A;- Destination element: &apos;ticket-booking-book-service/src/main/java/com.ticketbooking.book.utility&apos;&#x0D;&#x0A;- Original element: &apos;com.hospitalmanagement.utility.BillExporter.java&apos;" description="Copy compilation unit" destination="=ticket-booking-book-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ticketbooking.book.utility" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hospitalmanagement.utility{BillExporter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1689420136668" units="1" version="1.0"/>
+</session>

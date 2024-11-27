@@ -1,0 +1,10 @@
+package com.bikeservicemanagement.dto;
+
+import lombok.Data;
+
+@Data
+public class BookingListResponseDto extends CommonApiResponse {
+	
+	private List<BookingResponseDto> bookings; 
+
+}
